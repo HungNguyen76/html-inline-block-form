@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS</title>
     <link rel="stylesheet" href="./css/demo/style.css">
 </head>
+
 <body>
-    
+
+    <table>
+        <!-- table row -->
+        <tr>
+            <!-- table header -->
+            <th>Tháng</th>
+            <th>Doanh Thu</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Một</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Hai</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td colspan="2">Tổng: $180</td>
+            </tr>
+        </tbody>
+    </table>    
     <!-- Thẻ block -->
     <p>Hello cac ban</p>
     <ul>
@@ -47,39 +70,60 @@
     <hr>
     <!-- Thẻ inline -->
     <div>
-        <span>JS</span>
+        <span class="JS">JS</span>
         <span>Java</span>
         <span>Python</span>
-    <div>
-        <!-- a => anchor -->
-    <a href="https://rikkei.vn/">rikkei</a>
-    <p><br>Lorem <u>ipsum</u> dolor<br> <b>sit</b>, amet consectetur adipisicing elit. <em>Quidem</em>, nulla. <strong>Dolores asperiores ad veritatis</strong>. Repellendus porro expedita iusto similique repudiandae eveniet magni ducimus debitis totam, suscipit perspiciatis dolorum, officia asperiores!</p>
-    <hr>
-    <h2>Registration Form</h2>
-    <form action="/login.html" method="POST">
-        <label for="">Name</label><br>
-        <input type="text" name="name" id=""><br>
-        <label for="">Email</label><br>
-        <input type="email" name="email" id=""><br>
-        <label for="">Password</label><br>
-        <input type="password" name="password" id=""><br>
-        <input type="radio" name="gender" value="male">   
-        <label>Male</label><br>
-        <input type="radio" name="gender" value="male" >   
-        <label>Female</label><br>
-        <input type="radio" name="gender" value="male" >   
-        <label>Other</label><br>
-        <input type="checkbox" name="fruit1" value="male" checked>
-        <label>I have a apple</label><br>
-        <input type="checkbox" name="fruit2" value="male" checked>
-        <label>I have a banana</label><br>
-        <input type="checkbox" name="fruit3" value="male" checked>
-        <label>I have a orange</label><br>
-        <input type="button" name="click" value="Ấn em đi" onclick="alert('Ấn sao em?')">
-        <input type="submit" value="Submit">
-    </form>
+        <div>
+            <!-- a => anchor --><a href="https://rikkei.vn/">rikkei</a>
+            <p><br>Lorem <u>ipsum</u> dolor<br> <b>sit</b>, amet consectetur adipisicing elit. <em>Quidem</em>, nulla.
+                <strong>Dolores asperiores ad veritatis</strong>. Repellendus porro expedita iusto similique repudiandae
+                eveniet magni ducimus debitis totam, suscipit perspiciatis dolorum, officia asperiores!</p>
+            <hr>
+            <h2>Registration Form</h2>
+            <form action="/login.html" method="POST">
+                <label for="">Name</label><br>
+                <input type="text" name="name" id=""><br>
+                <label for="">Email</label><br>
+                <input type="email" name="email" id=""><br>
+                <label for="">Password</label><br>
+                <input type="password" name="password" id=""><br>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label><br>
+                <input type="radio" name="gender" value="male">
+                <label>Female</label><br>
+                <input type="radio" name="gender" value="male">
+                <label>Other</label><br>
+                <input type="checkbox" name="fruit1" value="male" checked>
+                <label>I have a apple</label><br>
+                <input type="checkbox" name="fruit2" value="male" checked>
+                <label>I have a banana</label><br>
+                <input type="checkbox" name="fruit3" value="male" checked>
+                <label>I have a orange</label><br>
+                <input type="color" name="color" value="#ff0000"><br>
+                <input type="date" name="date" value="2020-07-22"><br>
+                <input type="month" name="month" value="2020-07"><br>
+                <input type="number" name="number" value="10"><br>
+                <input type="range" name="range" value="10"><br>
+                <input type="search" name="search" value="search"><br>
+                <input type="tel" name="tel" value="1234567890"><br>
+                <input type="time" name="time" value="13:45:00"><br>
+                <input type="url" name="url" value="https://rikkei.vn/"><br>
+                <input type="week" name="week?" value="2020-W30"><br>
+                <select>
+                    <option value="volvo" selected>Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                </select><br>
+                <label>Feedback of this product: </label><br>
+                <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea><br>
+                <input type="datetime-local" name="datetime" value="2020-07-22T13:45:00"><br>
+                <input type="button" name="click" value="Ấn em đi" onclick="alert('Ấn sao em?')">
+                <input type="submit" value="Submit">
+            </form>
 
-    <!-- Ctrl + / => comment code-->
-    <!-- <script src="js/index.js"></script> -->
+            <!-- Ctrl + / => comment code-->
+            <!-- <script src="js/index.js"></script> -->
 </body>
+
 </html>

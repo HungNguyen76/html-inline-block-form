@@ -1,4 +1,14 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
+/* .JS {
+    color: rgb(45, 45, 255);
+} */
+
+    table, th, td, tr{
+        /* border-collapse: collapse; */
+        /* width: 100%; */
+        border: black 1px solid;
+        background-color: #DDDDDD;
+    }
