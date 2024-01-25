@@ -1,3 +1,13 @@
+:root {
+    /* --ten-bien: gia tri; */
+    --box-color: red;
+
+}
+
+/* * {
+    margin:0;
+    padding: 0;
+} */
 /* *{
     margin: 0;
     padding: 0;
@@ -6,18 +16,142 @@
     color: rgb(45, 45, 255);
 } */
 
-    table, th, td, tr{
-        /* border-collapse: collapse; */
-        /* width: 100%; */
-        border: black 1px solid;
-        background-color: #DDDDDD;
-    }
+table,
+th,
+td,
+tr {
+    /* border-collapse: collapse; */
+    /* width: 100%; */
+    border: black 1px solid;
+    background-color: #DDDDDD;
+}
+
 #heading {
     color: pink;
 }
+
 .heading-class {
     color: black;
 }
+
 h1 {
     color: red;
+}
+
+.table-report {
+    border: 1px solid var(--main-color);
+}
+
+.one {
+    width: 100px;
+    height: 80px;
+    background-color: red;
+    margin-right: 3px;
+    /* border-radius: 50%; */
+
+}
+
+.two {
+    width: 100px;
+    height: 150px;
+    background: green;
+    /* margin-right: 3px; */
+    /* position: fixed; */
+    /* top: 0px;
+    right: 0px; */
+    /* left:0px; */
+    /* top: 200px;
+    right: 0px; */
+    /* bottom: 0px; */
+}
+
+.three {
+    width: 100px;
+    height: 200px;
+    background: blue;
+    margin-right: 3px;
+}
+
+.four {
+    width: 100px;
+    height: 250px;
+    background: pink;
+    /* margin-right: 3px; */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    column-gap: 10px;
+    /* flex-direction: column-reverse; */
+    position: relative;
+    height: 400px;
+}
+
+.one {
+    /* h-offset v-offset blur spread color inset*/
+    /* box-shadow: 20px 20px 30px 20px #FBC1CD; */
+    /* opacity: 0.3; */
+    /* box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green; */
+}
+
+.hello {
+    text-shadow: 5px 5px 5px black;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 80px auto auto auto 40px;
+
+    height: 400px;
+    align-content: end;
+   
+
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+} */
+/* .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+} */
+
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
 }
